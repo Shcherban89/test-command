@@ -46,10 +46,15 @@ button {
   min-width: 320px;
   padding-left: 20px;
   padding-right: 20px;
-  margin: 0 auto;
 }
-.container {
-  max-width: 375px;
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 375px;
+    margin: 0 auto;
+  }
+}
+
+.header-container .container {
   margin-top: 20px;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -196,7 +201,7 @@ button {
 @media screen and (min-resolution: 192dpi) and (min-width: 375px),
   screen and (min-resolution: 2dppx) and (min-width: 375px),
   screen and (min-device-pixel-ratio: 2) and (min-width: 375px) {
-    .navigation-bg {
+  .navigation-bg {
     background-image: url(../images/background-ornament-mobile@2x.png);
   }
 }
@@ -219,7 +224,7 @@ button {
     padding-right: 32px;
   }
   .navigation-bg {
-    background-image: url(../images/background-ornament-tablet.png);    
+    background-image: url(../images/background-ornament-tablet.png);
   }
   .burger-address-container {
     padding: 14px 28px;
@@ -244,7 +249,7 @@ button {
 @media screen and (min-resolution: 192dpi) and (min-width: 768px),
   screen and (min-resolution: 2dppx) and (min-width: 768px),
   screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
-  .navigation-bg  {
+  .navigation-bg {
     background-image: url(../images/background-ornament-tablet@2x.png);
   }
 }
@@ -307,9 +312,9 @@ button {
   .address-link:focus {
     border-color: var(--yellow);
   }
-  .social-media-list .social-media-link{
+  .social-media-list .social-media-link {
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .social-media-list .social-media-link:hover,
   .social-media-list .social-media-link:focus {
