@@ -344,7 +344,6 @@ button {
 .hero-title span {
   color: var(--yellow);
 }
-
 .order-button {
   display: flex;
   justify-content: center;
