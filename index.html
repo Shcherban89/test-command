@@ -83,48 +83,175 @@
 
           <div class="hidden-menu is-hidden" data-menu>
             <div class="hidden-menu-container">
-            <div class="mobile-menu-top">
-              <address class="burger-address-container">
-                <a href="tel:+380684439426" class="burger-address-link"
-                  >+380 (68) 443-94-26</a
-                >
-              </address>
+              <div class="mobile-menu-top">
+                <address class="burger-address-container">
+                  <a href="tel:+380684439426" class="burger-address-link"
+                    >+380 (68) 443-94-26</a
+                  >
+                </address>
 
-              <button class="burger-close-btn" type="button" data-menu-close>
-                <span class="close-icon"></span>
-                <!-- <svg width="22" height="22" class="close-icon">
+                <button class="burger-close-btn" type="button" data-menu-close>
+                  <span class="close-icon"></span>
+                  <!-- <svg width="22" height="22" class="close-icon">
               <use href="./images/icons.svg#icon-close"></use>
             </svg> -->
-              </button>
+                </button>
+              </div>
+              <nav class="burger-nav-menu">
+                <ul class="burger-nav-list">
+                  <li><a href="" class="burger-nav-link">About us</a></li>
+                  <li>
+                    <a href="" class="burger-nav-link">Our collection</a>
+                  </li>
+                  <li>
+                    <a href="" class="burger-nav-link">Customer order</a>
+                  </li>
+                  <li>
+                    <a href="" class="burger-nav-link">Testimonials</a>
+                  </li>
+                </ul>
+              </nav>
             </div>
-            <nav class="burger-nav-menu">
-              <ul class="burger-nav-list">
-                <li><a href="" class="burger-nav-link">About us</a></li>
-                <li>
-                  <a href="" class="burger-nav-link">Our collection</a>
-                </li>
-                <li>
-                  <a href="" class="burger-nav-link">Customer order</a>
-                </li>
-                <li>
-                  <a href="" class="burger-nav-link">Testimonials</a>
-                </li>
-              </ul>
-            </nav>
-        </div>
             <div class="navigation-bg"></div>
-        
           </div>
         </div>
       </div>
     </header>
-    <!-- - Header
-    - Hero
-    - About us
-    - Our collection
-    - Your order
-    - Testimonials
-    - Footer -->
+    <main>
+      <section id="hero">
+        <div class="hero-container container">
+          <div class="order-block-text">
+            <h1 class="hero-title">
+              Reviving the traditional <span>Ukrainian</span> artistry in every
+              stitch.
+            </h1>
+            <a href="#" class="order-button"
+              >Order
+              <svg class="icon-order" width="26" height="10">
+                <use href="./images/icons.svg#icon-order"></use>
+              </svg>
+            </a>
+          </div>
+          <img
+            srcset="
+              ./images/hero/hero-image-tablet.jpg     413w,
+              ./images/hero/hero-image-tablet@2x.jpg  826w,
+              ./images/hero/hero-image-desktop.jpg    392w,
+              ./images/hero/hero-image-desktop@2x.jpg 784w,
+              ./images/hero/hero-image-mobile.jpg     335w,
+              ./images/hero/hero-image-mobile@2x.jpg  670w
+            "
+            sizes="(min-width:1280px) 392px, (min-width:768px) 413px, (min-width:375px) 335px"
+            src="./images/hero/hero-image-mobile.jpg"
+            alt="Girl"
+          />
+          <div class="star-cont">
+            <svg class="icon-star" width="52" height="51">
+              <use href="./images/icons.svg#icon-star"></use>
+            </svg>
+            <p>all embroidery is made by hand</p>
+          </div>
+          <img
+            class="hero-map"
+            srcset="
+              ./images/hero/order-map@2x.png 2x,
+              ./images/hero/order-map.png    1x
+            "
+            src="./images/hero/order-map.png"
+            alt="ukraine map"
+            width="139"
+          />
+        </div>
+      </section>
+      <section id="about">
+        <div class="about-container container">
+          <div>
+            <h2 class="about-title">About Us</h2>
+            <p class="about-text">
+              The store "Vyshyvanka Vibes" is a place where traditional
+              Ukrainian vyshyvanka comes to life with new zest and style. Our
+              store offers a wide selection of high-quality and authentic
+              embroidery, which combines the elegance of traditional needlework
+              and modern design.
+            </p>
+            <p class="about-text">
+              In "Vyshyvanka Vibes" you will find various models of embroidery,
+              from classic to modern, corresponding to the latest fashion
+              trends. Our embroidery is made using natural fabrics and is
+              embroidered by highly qualified craftsmen who convey the beauty of
+              Ukrainian culture in every detail.We believe that vyshyvanka is
+              not just clothing, but a symbol of national pride, the heritage of
+              our ancestors and a way of expressing one's individuality. Each
+              embroidery from "Vyshyvanka Vibes" has its own unique history and
+              symbolism, which gives it a special meaning.
+            </p>
+          </div>
+          <img
+            srcset="
+        ./images/about/about-large-desktop.jpg 709w,
+        ./images/about/about-large-desktop@2x.jpg  1418w
+          ./images/about/about-tablet.jpg     704w,
+          ./images/about/about-tablet@2x.jpg  1408w,
+          ./images/about/about-desktop.jpg    594w,
+          ./images/about/about-desktop@2x.jpg 1188w,
+          ./images/about/about-mobile.jpg     335w,
+          ./images/about/about-mobile@2x.jpg  670w
+        "
+            sizes="(min-width:1440px) 709px, (min-width:1280px) 594px, (min-width:768px) 704px, (min-width:375px) 335px"
+            src="/images/about/about-mobile.jpg"
+            alt="Girl and boy"
+          />
+          <div class="bg-about"></div>
+        </div>
+      </section>
+      <!-- <section id="your-order">
+        <div class="order-container container">
+        <p class="order-text">
+          <span>Your order</span> is our priority: Personalized approach and quality of
+          service
+        </p>
+        <form class="form-order" autocomplete="off">
+            <label class="form-label">
+              <input
+                class="input-field"
+                id="user-name"
+                name="user-name"
+                type="text"
+                placeholder="Enter your full name"
+                required
+                autofocus
+              />
+            </label>
+            <label class="form-label">
+                <input
+                  class="input-field"
+                  id="user-mail"
+                  name="user-mail"
+                  type="email"
+                  placeholder="Enter your email"
+                  required
+                  autofocus
+                />
+              </label>
+              <label class="form-label">
+              <textarea
+                class="textarea-field"
+                id="user-comment"
+                name="user-comment"
+                placeholder="Comments"
+              ></textarea>
+            </label>
+        </form>
+      <button class="your-order-button" type="submit">
+        Send
+        <svg class="icon-order" width="26" height="10">
+            <use href="./images/icons.svg#icon-order"></use>
+          </svg>
+      </button>
+    </div>
+      </section> -->
+      <!-- - Hero - About us - Our collection - Your order - Testimonials - Footer -->
+    </main>
     <script src="./js/menu.js"></script>
   </body>
 </html>
