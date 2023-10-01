@@ -684,8 +684,11 @@ button {
   .order-container {
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+  .order-container .container {
     position: relative;
   }
+
   .order-text {
     font-size: 44px;
     line-height: 1.32;
