@@ -10,6 +10,7 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -119,7 +120,7 @@
       </div>
     </header>
     <main>
-      <section id="hero" class="hero-section">
+      <section id="hero" class="hero-section" data-aos="fade-right">
         <div class="hero-container container">
           <div class="order-block-text">
             <h1 class="hero-title">
@@ -270,4 +271,8 @@
     </main>
     <script src="./js/menu.js"></script>
   </body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>
