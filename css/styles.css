@@ -793,6 +793,9 @@ border: 1px solid rgba(252, 249, 249, 0.1);
 border-radius: 4px;
 position: relative;
 }
+.testimonals-item:hover {
+  border-color: var(--yellow);
+  }
 .testimonals-image {
   position: absolute;
   top: 0;
