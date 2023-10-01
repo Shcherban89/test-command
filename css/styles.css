@@ -56,8 +56,11 @@ button {
   }
 }
 
+.header-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 .header-container .container {
-  margin-top: 20px;
   padding-top: 4px;
   padding-bottom: 4px;
 }
@@ -330,8 +333,9 @@ button {
 
 /* Hero */
 
-.hero-container {
-  padding-top: 60px;
+.hero-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .hero-title {
   font-size: 44px;
@@ -369,17 +373,21 @@ button {
 }
 
 @media screen and (min-width: 768px) {
+  .hero-section {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
   .hero-container {
-    padding-top: 106px;
     position: relative;
   }
   .hero-title {
     max-width: 549px;
+    margin-top: 26px;
   }
   .star-cont {
     display: block;
     position: absolute;
-    top: 80px;
+    top: 0;
     right: 0;
     max-width: 115px;
   }
@@ -411,8 +419,11 @@ button {
 }
 
 @media screen and (min-width: 1280px) {
+  .hero-section {
+    padding-top: 80px;
+    padding-bottom: 75px;
+  }
   .hero-container {
-    padding-top: 100px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
@@ -420,10 +431,11 @@ button {
   }
   .hero-title {
     max-width: 518px;
+    margin-top: 0px;;
   }
 
   .star-cont {
-    top: 114px;
+    top: 94px;
   }
   .order-button {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -444,7 +456,7 @@ button {
     line-height: 1.16;
   }
   .star-cont {
-    top: 166px;
+    top: 146px;
   }
   .order-block-text {
     margin-top: 66px;
