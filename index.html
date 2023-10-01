@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vyshyvanka Vibes</title>
     <link
@@ -204,25 +205,26 @@
           <div class="bg-about"></div>
         </div>
       </section>
-      <!-- <section id="your-order">
-        <div class="order-container container">
-        <p class="order-text">
-          <span>Your order</span> is our priority: Personalized approach and quality of
-          service
-        </p>
-        <form class="form-order" autocomplete="off">
-            <label class="form-label">
-              <input
-                class="input-field"
-                id="user-name"
-                name="user-name"
-                type="text"
-                placeholder="Enter your full name"
-                required
-                autofocus
-              />
-            </label>
-            <label class="form-label">
+      <section id="your-order" class="order-container">
+        <div class="container">
+          <div>
+            <p class="order-text">
+              <span>Your order</span> is our priority: Personalized approach and
+              quality of service
+            </p>
+            <form class="form-order" autocomplete="off">
+              <label class="form-label">
+                <input
+                  class="input-field"
+                  id="user-name"
+                  name="user-name"
+                  type="text"
+                  placeholder="Enter your full name"
+                  required
+                  autofocus
+                />
+              </label>
+              <label class="form-label">
                 <input
                   class="input-field"
                   id="user-mail"
@@ -234,22 +236,36 @@
                 />
               </label>
               <label class="form-label">
-              <textarea
-                class="textarea-field"
-                id="user-comment"
-                name="user-comment"
-                placeholder="Comments"
-              ></textarea>
-            </label>
-        </form>
-      <button class="your-order-button" type="submit">
-        Send
-        <svg class="icon-order" width="26" height="10">
-            <use href="./images/icons.svg#icon-order"></use>
-          </svg>
-      </button>
-    </div>
-      </section> -->
+                <textarea
+                  class="textarea-field"
+                  id="user-comment"
+                  name="user-comment"
+                  placeholder="Comments"
+                ></textarea>
+              </label>
+            </form>
+            <button class="your-order-button" type="submit">
+              Send
+              <svg class="icon-order" width="26" height="10">
+                <use href="./images/icons.svg#icon-order"></use>
+              </svg>
+            </button>
+          </div>
+          <img
+            class="form-image"
+            srcset="
+              ./images/yourorder/formimage-tablet.jpg      638w,
+              ./images/yourorder/formimage-tablet@2x.jpg  1276w,
+              ./images/yourorder/formimage-desktop.jpg     524w,
+              ./images/yourorder/formimage-desktop@2x.jpg 1048w
+            "
+            sizes="(min-width:1280px) 524x, (min-width:768px) 638px"
+            src="/images/yourorder/formimage-tablet.jpg"
+            alt="Girl clothes"
+          />
+          <div class="form-cont-bg"></div>
+        </div>
+      </section>
       <!-- - Hero - About us - Our collection - Your order - Testimonials - Footer -->
     </main>
     <script src="./js/menu.js"></script>
