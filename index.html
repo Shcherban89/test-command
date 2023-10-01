@@ -27,9 +27,9 @@
               ><img src="./images/logo.svg" width="44" height="39" alt="Logo"
             /></a>
             <ul class="nav-list" data-aos="flip-up">
-              <li><a href="" class="nav-link">About us</a></li>
+              <li><a href="#about" class="nav-link">About us</a></li>
               <li><a href="" class="nav-link">Our collection</a></li>
-              <li><a href="" class="nav-link">Customer order</a></li>
+              <li><a href="#your-order" class="nav-link">Customer order</a></li>
               <li><a href="" class="nav-link">Testimonials</a></li>
             </ul>
           </nav>
@@ -101,12 +101,12 @@
               </div>
               <nav class="burger-nav-menu">
                 <ul class="burger-nav-list">
-                  <li><a href="" class="burger-nav-link">About us</a></li>
+                  <li><a href="#about" class="burger-nav-link">About us</a></li>
                   <li>
                     <a href="" class="burger-nav-link">Our collection</a>
                   </li>
                   <li>
-                    <a href="" class="burger-nav-link">Customer order</a>
+                    <a href="your-order" class="burger-nav-link">Customer order</a>
                   </li>
                   <li>
                     <a href="" class="burger-nav-link">Testimonials</a>
@@ -127,7 +127,7 @@
               Reviving the traditional <span>Ukrainian</span> artistry in every
               stitch.
             </h1>
-            <a href="#" class="order-button"
+            <a href="#your-order" class="order-button"
               >Order
               <svg class="icon-order" width="26" height="10">
                 <use href="./images/icons.svg#icon-order"></use>
@@ -274,6 +274,9 @@
   </body>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({
+      disable:'phone',
+      disable:'tablet',
+    });
   </script>
 </html>
