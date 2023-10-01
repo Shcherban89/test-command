@@ -369,12 +369,9 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    position: relative;
-  }
-
   .hero-container {
     padding-top: 106px;
+    position: relative;
   }
   .hero-title {
     max-width: 549px;
@@ -408,7 +405,7 @@ button {
   .hero-map {
     display: block;
     position: absolute;
-    bottom: 0;
+    bottom: -100px;
     right: 0;
   }
 }
@@ -435,11 +432,7 @@ button {
   .order-button:focus {
     border-color: var(--yellow);
   }
-
-  .hero-map {
-    bottom: -100px;
-  }
-  
+ 
   .order-block-text {
     margin-top: 94px;
   }
