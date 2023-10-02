@@ -605,6 +605,7 @@ button {
   margin: 0 auto 80px;
   width: 375px;
   height: 550px;
+  background-clip: calc(100%+200px);
 }
 @media screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx),
@@ -781,7 +782,7 @@ button {
     height: 521px;
     background-image: url(../images/yourorder/form-bg-desktop.png);
   }
-  .yourorder-order-bg {
+  .your-order-bg {
     background-image: url(../images/yourorder/girl-photo-desktop.jpg);
     width: 1280px;
     margin-bottom: 150px;
@@ -790,7 +791,7 @@ button {
 @media screen and (min-resolution: 192dpi) and (min-width: 1280px),
   screen and (min-resolution: 2dppx) and (min-width: 1280px),
   screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
-  .yourorder-order-bg {
+  .your-order-bg {
     background-image: url(../images/yourorder/girl-photo-desktop@2x.jpg);
   }
 }
@@ -804,7 +805,7 @@ button {
     height: 484px;
     background-image: url(../images/yourorder/form-bg-large-desktop.png);
   }
-  .yourorder-order-bg {
+  .your-order-bg {
     background-image: url(../images/yourorder/girl-photo-large-desktop.jpg);
     width: 1440px;
   }
@@ -815,7 +816,7 @@ button {
   .form-cont-bg {
     background-image: url(../images/yourorder/form-bg-large-desktop@2x.png);
   }
-  .yourorder-order-bg {
+  .your-order-bg {
     background-image: url(../images/yourorder/girl-photo-large-desktop@2x.jpg);
   }
 }
