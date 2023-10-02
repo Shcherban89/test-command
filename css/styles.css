@@ -597,10 +597,21 @@ button {
   padding-top: 40px;
   padding-bottom: 40px;
 }
-.yourorder-large-image {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 80px;
+.your-order-bg {
+  background-image: url(../images/yourorder/girl-photo-mobile.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto 80px;
+  width: 375px;
+  height: 550px;
+}
+@media screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx),
+  screen and (min-device-pixel-ratio: 2) {
+   .your-order-bg {
+    background-image: url(../images/yourorder/girl-photo-mobile@2x.jpg);
+  }
 }
 .order-text {
   font-size: 32px;
@@ -693,9 +704,6 @@ button {
   .order-container .container {
     position: relative;
   }
-  .yourorder-large-image {
-    margin-bottom: 100px;
-  }
   .order-text {
     font-size: 44px;
     line-height: 1.32;
@@ -733,12 +741,22 @@ button {
     height: 484px;
     background-image: url(../images/yourorder/form-bg-tablet.png);
   }
+  .your-order-bg {
+    background-image: url(../images/yourorder/girl-photo-tablet.jpg);
+    width: 768px;
+    height: 776px;
+    margin-bottom: 100px;
+  }
 }
+
 @media screen and (min-resolution: 192dpi) and (min-width: 768px),
   screen and (min-resolution: 2dppx) and (min-width: 768px),
   screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
   .form-cont-bg {
     background-image: url(../images/yourorder/form-bg-tablet@2x.png);
+  }
+  .your-order-bg {
+    background-image: url(../images/yourorder/girl-photo-tablet@2x.jpg);
   }
 }
 @media screen and (min-width: 1280px) {
@@ -747,9 +765,6 @@ button {
     flex-direction: row-reverse;
     justify-content: space-between;
     gap: 50px;
-  }
-  .yourorder-large-image {
-    margin-bottom: 150px;
   }
   .order-container {
     padding-top: 75px;
@@ -766,6 +781,18 @@ button {
     height: 521px;
     background-image: url(../images/yourorder/form-bg-desktop.png);
   }
+  .yourorder-order-bg {
+    background-image: url(../images/yourorder/girl-photo-desktop.jpg);
+    width: 1280px;
+    margin-bottom: 150px;
+  }
+}
+@media screen and (min-resolution: 192dpi) and (min-width: 1280px),
+  screen and (min-resolution: 2dppx) and (min-width: 1280px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
+  .yourorder-order-bg {
+    background-image: url(../images/yourorder/girl-photo-desktop@2x.jpg);
+  }
 }
 @media screen and (min-width: 1440px) {
   .order-text {
@@ -777,12 +804,19 @@ button {
     height: 484px;
     background-image: url(../images/yourorder/form-bg-large-desktop.png);
   }
+  .yourorder-order-bg {
+    background-image: url(../images/yourorder/girl-photo-large-desktop.jpg);
+    width: 1440px;
+  }
 }
-@media screen and (min-resolution: 192dpi) and (min-width: 768px),
-  screen and (min-resolution: 2dppx) and (min-width: 768px),
-  screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+@media screen and (min-resolution: 192dpi) and (min-width: 1440px),
+  screen and (min-resolution: 2dppx) and (min-width: 1440px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
   .form-cont-bg {
     background-image: url(../images/yourorder/form-bg-large-desktop@2x.png);
+  }
+  .yourorder-order-bg {
+    background-image: url(../images/yourorder/girl-photo-large-desktop@2x.jpg);
   }
 }
 /* Testimonals */
