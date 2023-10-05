@@ -83,6 +83,11 @@ button {
   visibility: hidden;
   pointer-events: none;
 }
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
 .hidden-menu {
   position: absolute;
   z-index: 999;
@@ -980,11 +985,11 @@ margin-bottom: 20px;
     padding-bottom: 75px;
   }
   .collection-list {
-    column-gap: 18px;
+    column-gap: 20px;
     row-gap: 40px;
   }
   .collection-item {
-    width: calc((100%-40px)/3);
+    width: calc((100%-46px)/3);
   }
 }
 @media screen and (min-width: 1440px) {
